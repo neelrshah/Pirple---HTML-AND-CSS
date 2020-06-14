@@ -1,0 +1,267 @@
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by neelrshah (http://jsbin.com/guvenuw/15/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<style id="jsbin-css">
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+ background: linear-gradient(white, #D3D8E8);
+}
+#headerwrapper
+{
+ width:100%;
+ min-width:980px;
+ background-color:#4c66a4;
+}
+#header
+{
+ width:980px;
+ margin:0px auto;
+ padding:0px;
+ height:85px;
+}
+#header li
+{
+ list-style-type:none;
+ float:left;
+ text-align:left;
+ color:white;
+}
+
+#header form
+{
+ margin-top:15px;
+ float:right;
+}
+#header form li
+{
+ font-size:13px;
+ margin-left:15px;
+}
+
+#header form input[type="text"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid #08298A;
+ height:25px;
+ padding-left:3px;
+}
+
+#header form input[type="password"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid #08298A;
+ height:25px;
+ padding-left:3px;
+}
+#header form input[type="submit"]
+{
+ height:25px;
+ margin-top:20px;
+ background-color:#084B8A;
+ color:white;
+ border:1px solid #08298A;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:980px;
+}
+#wrapper div
+{
+ float:left;
+ font-family: helvetica, arial, sans-serif;
+}
+
+#wrapper #div1
+{
+ margin-top:30px;
+ width:590px;
+ text-align:left;
+}
+
+
+#wrapper #div2
+{
+ margin-top:10px;
+ width:390px;
+ text-align:left;
+}
+#wrapper #div2 h1
+{
+ margin:0px;
+ font-size:37px;
+ color:#2E2E2E;
+}
+#wrapper #div2 p
+{
+ font-size:18px;
+ color:#2E2E2E;
+}
+#wrapper #div2 li
+{
+ list-style-type:none;
+ margin-top:10px;
+}
+#wrapper #div2 li #firstname
+{
+ width:49%;
+}
+#wrapper #div2 li #surname
+{
+ margin-left:2%;
+ width:49%;
+}
+#wrapper #div2 li input[type="text"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li input[type="password"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li select
+{
+ padding:4px;
+ float:left;
+}
+#wrapper #div2 li a
+{
+ margin-left:10px;
+ width:150px;
+ color:#045FB4;
+ text-decoration:none;
+ font-size:11px;
+ display: inline-block;
+ vertical-align: middle;
+ line-height:15px;
+}
+#wrapper #div2 li a:hover
+{
+ text-decoration:underline;
+}
+#wrapper #div2 li
+{
+ color:#2E2E2E;
+ font-size:18px;
+}
+#wrapper #div2 #terms
+{
+ color:#424242;
+ font-size:11px;
+}
+#wrapper #div2 #terms a
+{
+ display:inline;
+ margin:0px;
+}
+#wrapper #div2 li input[type="submit"]
+{
+ width:205px;
+ height:45px;
+ text-align:center;
+ font-size:19px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+ font-weight: bold !important;
+ background: linear-gradient(#67ae55, #578843);
+ background-color: #69a74e;
+ box-shadow: inset 0 1px 1px #a4e388;
+ border-color: #3b6e22 #3b6e22 #2c5115;
+ border: 1px solid;
+ border-radius: 5px;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+#wrapper #div2 #create_page
+{
+ color:#424242;
+ font-size:13px;
+ font-weight:bold;
+}
+#wrapper #div2 #create_page a
+{
+ display:inline;
+ margin:0px;
+ font-size:13px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="headerwrapper">
+ <div id="header">
+ <img src="https://marketingland.com/wp-content/ml-loads/2015/07/facebook-logo-2015-blue-1920.png" alt="fb logo" width="150px" height="80px">  
+  <form action="post">
+ <li>Email or Phone<br><input type="text" name="email"></li>
+ <li>Password<br><input type="password" name="password"><br><a href="">Forgotten account?</a></li>
+ <li><input type="submit" name="login" value="Log In"></li>
+ </form>
+ </div>
+</div>
+
+<div id="wrapper">
+
+<div id="div1">
+
+<img src="https://secure.i.telegraph.co.uk/multimedia/archive/01423/facebook_1423117a.jpg" alt="map" width="530px" id="map">
+</div>
+
+<div id="div2">
+<h1>Create an account</h1>
+<p>It is easy and quick.</p>
+<li><input type="text" placeholder="First Name" id="firstname"><input type="text" placeholder="Surname" id="surname"></li>
+<li><input type="text" placeholder="Mobile number or email address"></li>
+
+<li><input type="password" placeholder="New password"></li>
+<p>Birthday</p>
+<li>
+<select><option>Day</option></select>
+<select><option>Month</option></select>
+<select><option>Year</option></select>
+<a href="">Why do I need to provide my date of birth?</a>
+</li>
+<li><input type="radio">Female <input type="radio">Male</li>
+<li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a>.</li>
+<li><input type="submit" value="Create an account"></li>
+<li id="create_page"><a href="">Create a Page</a> for a celebrity, band or business.</li>
+</div>
+
+</div>
+
+
+</body>
+</html>
